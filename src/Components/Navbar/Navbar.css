@@ -1,6 +1,5 @@
 nav {
     width: 100%;
-   /* background:  #333;*/
     color: #fff;
     padding: 4px 0;
     position: fixed;
@@ -9,11 +8,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 .logo {
-    width: 100px;
+    width: 120px;
+    transition: width 0.3s;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -21,6 +29,7 @@ nav ul li {
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
+    transition: margin 0.3s, font-size 0.3s;
 }
 
 .container {
@@ -37,15 +46,25 @@ nav ul li {
     cursor: pointer;
     border: 0;
     outline: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #212121;
+    color: #fff;
 }
 
 .dark-nav {
     background: #a07621;
-    transition: 0.5s;
+    transition: background 0.5s, padding 0.3s;
 }
 
 .menu-icon {
     display: none;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1001; /* Above mobile menu */
+    position: relative;
 }
 
 @media (max-width: 1000px) {
@@ -54,38 +73,52 @@ nav ul li {
     }
     nav ul li {
         margin: 10px 15px;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 840px)
-{
+@media (max-width: 840px) {
     nav {
-        padding: 15px 0;
+        padding: 15px 10px;
     }
     nav ul {
         position: fixed;
         top: 0;
-        right: 0px;
+        right: 0;
         bottom: 0;
         background: #a07621;
-        z-index: -1;
+        z-index: 1000;
         width: 200px;
         padding-top: 70px;
-        transition: 0.5s;
+        transition: right 0.5s ease-in-out;
+        flex-direction: column;
     }
     nav ul li {
         display: block;
-        margin: 25px 40px;
+        margin: 25px 20px;
     }
     .menu-icon {
         display: block;
-        width: 30px;
-        cursor: pointer;
     }
     .hide-mobile-menu {
         right: -200px;
     }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
 
-
-
+@media (max-width: 500px) {
+    .logo {
+        width: 100px;
+    }
+    nav ul li {
+        margin: 20px 15px;
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}

@@ -1,10 +1,12 @@
 // Campus.jsx
 import React, { useState } from 'react';
 import './Campus.css';
-import gallery_1 from '../../assets/gallery-img1.jpg';
-import gallery_2 from '../../assets/gallery-img2.jpg';
-import gallery_3 from '../../assets/gallery-img3.jpg';
-import gallery_4 from '../../assets/gallery-img5.jpg';
+import gallery_1 from '../../assets/image-2.jpg';
+import gallery_2 from '../../assets/image1.jpg';
+import gallery_3 from '../../assets/image4.jpg';
+import gallery_4 from '../../assets/galleryimage7.jpeg';
+import gallery_5 from '../../assets/galleryimage8.jpeg';
+import gallery_6 from '../../assets/galleryimage9.jpeg';
 import left_arrow from '../../assets/back-icon.png';  // Make sure to import your arrow images
 import right_arrow from '../../assets/next-icon.png';
 
@@ -12,7 +14,7 @@ const Campus = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [gallery_1, gallery_2, gallery_3, gallery_4];
+  const images = [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5, gallery_6];
 
   const handleImageClick = (index) => {
     setSelectedImage(images[index]);

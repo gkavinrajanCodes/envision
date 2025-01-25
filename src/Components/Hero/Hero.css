@@ -30,27 +30,27 @@
 .cash-prize {
     margin: 20px auto;
     text-align: center;
-    color: #130707; /* Gold color for the heading */
+    color: #130707;
     font-family: 'Arial', sans-serif;
 }
 
 .cash-prize h2 {
-    font-size: 36px; /* Base font size for large screens */
+    font-size: 36px;
     font-weight: bold;
     color: #ffcc00;
     margin-bottom: 30px;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Spacing for better readability */
-    text-align: center; /* Center-align for smaller screens */
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .prize-list {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 30px; /* Spacing between items */
+    gap: 30px;
     position: relative;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
 }
 
 .prize-item {
@@ -64,10 +64,10 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-    width: 120px; /* Default width for larger screens */
-    height: 200px; /* Default height for larger screens */
+    width: 120px;
+    height: 200px;
     position: relative;
-    text-align: center; /* Ensure content alignment */
+    text-align: center;
 }
 
 .prize-item .emoji {
@@ -83,15 +83,15 @@
 }
 
 .prize-item:first-child {
-    height: 220px; /* Highlight the 1st prize */
+    height: 220px;
 }
 
 .prize-item:nth-child(2) {
-    height: 240px; /* Highlight the 2nd prize */
+    height: 240px;
 }
 
 .prize-item:nth-child(3) {
-    height: 200px; /* Highlight the 3rd prize */
+    height: 200px;
 }
 
 @media (max-width: 850px) {
@@ -104,14 +104,13 @@
     }
 
     .prize-list {
-        flex-wrap: wrap; /* Enable wrapping for narrower screens */
         gap: 20px;
     }
 
     .prize-item {
-        width: 100px; /* Reduce width */
-        height: 160px; /* Reduce height */
-        font-size: 20px; /* Smaller font size */
+        width: 100px;
+        height: 160px;
+        font-size: 20px;
     }
 
     .prize-item:first-child {
@@ -127,7 +126,7 @@
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     .hero-text h1 {
         font-size: 30px;
         max-width: 400px;
@@ -143,7 +142,7 @@
     }
 
     .prize-list {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
         gap: 15px;
     }
@@ -166,6 +165,3 @@
         height: 140px;
     }
 }
-
-
-

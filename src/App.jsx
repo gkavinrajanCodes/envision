@@ -10,7 +10,9 @@ import Footer from './Components/Footer/Footer'
 import Timeline from './Components/Timeline/Timeline'
 import Aboutieee from './Components/AboutIEEE/Aboutieee'
 import FAQ from './Components/FAQ/FAQ'
-import People from './Components/People/People'
+import RegistrationFee from './Components/RegistrationFee/RegistrationFee'
+import Sponsors from './Components/Sponsors/Sponsors'
+import Reach from './Components/Reach/Reach'
 
 const App = () => {
   return (
@@ -19,14 +21,19 @@ const App = () => {
       <Hero/>
       <div className='container'>
         <About/>
+        <Title subtitle = 'Our Sponsors' title = ''/>
+        <Sponsors/>
         <Title subtitle = 'Roles' title = 'Choose your Path'/>
         <Programs/>
         <Title subtitle = 'Timeline' title = 'From concept to conquest'/>
         <Timeline/>
+        <RegistrationFee/>
+        <Title subtitle = 'Guidelines' title = 'Envision 2025 Participation Guidelines'/>
         <FAQ/>
         <Title subtitle = 'GALLERY' title = 'Past Envision'/>
         <Campus/>
         <Aboutieee/>
+        <Reach/>
         <Title subtitle = 'CONTACT US' title = 'Get in Touch'/>
         <Contact/>
         <Footer/>

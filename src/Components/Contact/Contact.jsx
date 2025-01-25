@@ -8,8 +8,16 @@ import white_arrow from "../../assets/white-arrow.png";
 
 const Contact = () => {
   const [result, setResult] = useState("");
-  const [modalOpen, setModalOpen] = useState(false);
+  const [isDirectionsOpen, setIsDirectionsOpen] = useState(false);
+  const [activeLocation, setActiveLocation] = useState(null);
 
+  const toggleDirections = () => {
+    setIsDirectionsOpen(!isDirectionsOpen);
+  };
+
+  const toggleLocation = (location) => {
+    setActiveLocation((prev) => (prev === location ? null : location));
+  };
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
@@ -46,20 +54,10 @@ const Contact = () => {
             ieeecs-ssn@ssn.edu.in
           </li>
           <li>
-            <img src={phone_icon} alt="" />
-            +91 95660 64483
-          </li>
-          <li>
             <img src={location_icon} alt="" />
             IT Seminar Hall, SSN College of Engineering, Chennai - 603110
           </li>
         </ul>
-        <button
-          className="btn dark-btn directions-btn"
-          onClick={() => setModalOpen(true)}
-        >
-          View Directions
-        </button>
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
@@ -92,46 +90,6 @@ const Contact = () => {
         </form>
         <span>{result}</span>
       </div>
-      {modalOpen && (
-  <div className="modal-overlay">
-    <div className="modal">
-      <h4>Directions to SSN College of Engineering</h4>
-      <div className="directions-container">
-        <div className="directions-row">
-          <h5>From Chennai Central (44 km):</h5>
-          <ul>
-            <li>Hire an auto/taxi.</li>
-            <li>Board 221 bus directly from Central to SSN.</li>
-            <li>Take the metro from Central to Airport (refer to "Airport" directions below).</li>
-          </ul>
-        </div>
-        <div className="directions-row">
-          <h5>From Egmore Station (40 km):</h5>
-          <ul>
-            <li>Hire an auto/taxi.</li>
-            <li>Catch the 40603/40605 train from Egmore to Tambaram and 515 from Tambaram to SSN.</li>
-          </ul>
-        </div>
-        <div className="directions-row">
-          <h5>From CMBT (43 km):</h5>
-          <ul>
-            <li>Board direct bus 570X from CMBT to SSN.</li>
-            <li>Take the metro from CMBT to Airport (refer to "Airport" directions below).</li>
-          </ul>
-        </div>
-        <div className="directions-row">
-          <h5>From Airport (38km):</h5>
-          <ul>
-            <li>Walk to Tirusulam bus stop and board 70C to Tambaram or go to Tirusulam railway station and board 40603/40605 to Tambaram railway station and 515 from Tambaram to SSN.</li>
-          </ul>
-        </div>
-      </div>
-      <button className="btn close-btn" onClick={() => setModalOpen(false)}>
-        Close
-      </button>
-    </div>
-  </div>
-)}
     </div>
   );
 };

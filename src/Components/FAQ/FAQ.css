@@ -1,9 +1,12 @@
-/* FAQ.css */
 .faq-container {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
     font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Glossy container background */
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
+    padding: 2rem;
 }
 
 .faq-button {
@@ -12,19 +15,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background-color: #2563eb;
+    background: linear-gradient(145deg, #2563eb, #1e4ea5); /* Glossy button */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 1.25rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     text-align: left;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.3);
 }
 
 .faq-button:hover {
-    background-color: #1741a1;
+    background: linear-gradient(145deg, #1e4ea5, #1741a1); /* Darker gradient on hover */
+    transform: scale(1.02); /* Slight zoom effect */
 }
 
 .arrow {
@@ -38,22 +43,23 @@
 
 .faq-content {
     margin-top: 1rem;
-    animation: slideDown 0.3s ease-out;
+    animation: fadeIn 0.4s ease-out;
 }
 
 .faq-item {
-    background-color: #f9f9f9;
+    background: linear-gradient(145deg, #f9f9f9, #f0f0f0); /* Glossy background */
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.5); /* Subtle shadows */
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .faq-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px); /* Lift effect */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), -4px -4px 10px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(145deg, #f0f0f0, #ffffff); /* Lighter background on hover */
 }
 
 .faq-question {
@@ -67,19 +73,19 @@
 }
 
 .faq-question span {
-    color: #2563eb;
+    color: #2563eb; /* Accent color */
     font-size: 1.5rem;
 }
 
 .faq-answer {
     color: #4b5563;
-    line-height: 1.6;
+    line-height: 1.8; /* Better readability */
     white-space: pre-line;
     padding-top: 0.5rem;
     font-size: 1rem;
 }
 
-@keyframes slideDown {
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(-10px);
