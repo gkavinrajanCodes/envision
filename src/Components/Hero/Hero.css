@@ -1,0 +1,170 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(93, 76, 209, 0.7), rgba(66, 64, 78, 0.7)), url('../../assets/IMG_8371.JPG');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+    font-size: large;
+}
+
+.cash-prize {
+    margin: 20px auto;
+    text-align: center;
+    color: #ffcc00; /* Gold color for the heading */
+    font-family: 'Arial', sans-serif;
+}
+
+.cash-prize h2 {
+    font-size: 36px; /* Base font size for large screens */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Spacing for better readability */
+    text-align: center; /* Center-align for smaller screens */
+}
+
+.prize-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px; /* Spacing between items */
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.prize-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    width: 120px; /* Default width for larger screens */
+    height: 200px; /* Default height for larger screens */
+    position: relative;
+    text-align: center; /* Ensure content alignment */
+}
+
+.prize-item .emoji {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.prize-item .amount {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+.prize-item:first-child {
+    height: 220px; /* Highlight the 1st prize */
+}
+
+.prize-item:nth-child(2) {
+    height: 240px; /* Highlight the 2nd prize */
+}
+
+.prize-item:nth-child(3) {
+    height: 200px; /* Highlight the 3rd prize */
+}
+
+@media (max-width: 850px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .cash-prize h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .prize-list {
+        flex-wrap: wrap; /* Enable wrapping for narrower screens */
+        gap: 20px;
+    }
+
+    .prize-item {
+        width: 100px; /* Reduce width */
+        height: 160px; /* Reduce height */
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .prize-item:first-child {
+        height: 170px;
+    }
+
+    .prize-item:nth-child(2) {
+        height: 180px;
+    }
+
+    .prize-item:nth-child(3) {
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px){
+    .hero-text h1 {
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .hero-text p {
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+    .cash-prize h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .prize-list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .prize-item {
+        width: 90px;
+        height: 140px;
+        font-size: 18px;
+    }
+
+    .prize-item:first-child {
+        height: 160px;
+    }
+
+    .prize-item:nth-child(2) {
+        height: 150px;
+    }
+
+    .prize-item:nth-child(3) {
+        height: 140px;
+    }
+}
+
+
+

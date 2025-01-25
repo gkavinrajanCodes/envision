@@ -1,0 +1,98 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program img {
+    width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+    border-radius: 10px;
+    display: block;
+    object-fit: cover; /* Makes images fit nicely */
+    height: 400px; /* Enforce portrait dimensions */
+}
+
+.program {
+    flex-basis: calc(33.333% - 20px); /* Three items per row with spacing */
+    position: relative;
+}
+
+.program-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #001f98;
+}
+
+.program-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.program img {
+    width: 100%;
+    height: 400px; /* Enforce consistent portrait dimensions */
+    border-radius: 10px;
+    object-fit: cover; /* Ensure images fill the container proportionally */
+    display: block;
+    position: relative; /* Keep it properly positioned */
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.caption img {
+    width: 60px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.program:hover .caption {
+    opacity: 1; /* Make the caption visible on hover */
+}
+
+.program .caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1.125rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s;
+  }
+  
+@media (max-width: 650px) {
+    .programs {
+        flex-direction: column;
+    }
+    .program {
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

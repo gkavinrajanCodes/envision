@@ -1,0 +1,183 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #676767;
+}
+
+.contact-col h3 {
+    color: #000f38;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+.contact-col p {
+    max-width: 450px;
+    list-style: 0.3;
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-col ul li img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.contact form input, .contact form textarea {
+    display: block;
+    width: 100%;
+    background: #EBECFE ;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+}
+
+.directions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .directions-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .directions-row h5 {
+    margin-bottom: 10px;
+  }
+  
+  .directions-row ul {
+    padding-left: 20px;
+  }
+  
+  .directions-row li {
+    margin-bottom: 5px;
+  }
+
+/* Modal styles */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px; /* Increased the width */
+    width: 90%; /* Makes it responsive */
+    margin: 0 auto; /* Center the modal */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    position: fixed; /* Allows absolute positioning relative to the viewport */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Corrects the alignment */
+    z-index: 1000; /* Ensures it appears on top of other elements */
+  }
+  
+  .modal-heading {
+    text-align: center; /* Centers the heading */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds spacing between heading and content */
+  }
+  
+.modal h4 {
+font-size: 20px;
+color: #000f38;
+margin-bottom: 15px;
+}
+
+.modal ul {
+padding-left: 20px;
+margin-bottom: 15px;
+}
+
+.modal li {
+margin-bottom: 10px;
+}
+
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+background: #000f38;
+color: #fff;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+  
+  .close-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #222;
+  }
+  
+  /* Optional Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+    }
+    .contact-col {
+        padding: 20px;
+    }
+}
+
