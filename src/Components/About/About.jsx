@@ -10,15 +10,12 @@ const About = () => {
         </div>
         <div className='about-right'>
             <h3>About ENVISION</h3>
-            <h2>Where Ideas meets Possibilities</h2>
+            <h2>Where ideas meet possibilities</h2>
             <p>
-                Envision 2025 builds upon the success of its inaugural season by transforming into an intense 24-hour build-a-thon, designed to push participants’ creativity, technical skills, and innovation to new levels.            
+                Envision 2025 builds upon the success of its inaugural season by transforming into a two-day buildathon where creativity meets collaboration. This dynamic event brings together developers, designers, and strategists to form cross-disciplinary teams and transform ideas into impactful product prototypes.             
             </p>
             <p>
-                The upcoming season introduces three different roles for participants to choose from, each focusing on key players of developing a product and encouraging students to think beyond conventional solutions.
-            </p>
-            <p>
-                The provided tracks are carefully curated to pique participants’ curiosity and foster collaboration and networking, driving them to develop sustainable, impactful solutions within a high-energy, time-sensitive environment. With an expanded scope and attractive prize money, Envision 2025 promises an even more dynamic, immersive experience for all involved.
+                Whether you're coding the backbone, crafting stunning user experiences, or strategizing bold solutions, Envision 2025 is your chance to showcase your skills. With expert mentorship, collaborative synergy, and a focus on innovation, teams will work tirelessly to create, refine, and pitch their projects to an esteemed panel of judges. It's more than just a competition—it’s where visions come to life.
             </p>
         </div>
     </div>

@@ -41,6 +41,7 @@ a {
     padding: 18px 35px;  /* Larger padding */
     font-size: 22px;     /* Larger font */
     min-width: 200px;  /* Ensures minimum width */
+    color: #212Ea0;
     letter-spacing: 0.5px;  /* Optional: improves text readability */
     font-weight: 700;
 }

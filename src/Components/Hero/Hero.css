@@ -30,13 +30,14 @@
 .cash-prize {
     margin: 20px auto;
     text-align: center;
-    color: #ffcc00; /* Gold color for the heading */
+    color: #130707; /* Gold color for the heading */
     font-family: 'Arial', sans-serif;
 }
 
 .cash-prize h2 {
     font-size: 36px; /* Base font size for large screens */
     font-weight: bold;
+    color: #ffcc00;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px; /* Spacing for better readability */
@@ -59,7 +60,7 @@
     justify-content: flex-end;
     font-size: 24px;
     font-weight: 700;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.922);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
@@ -75,7 +76,7 @@
 }
 
 .prize-item .amount {
-    color: #ffcc00;
+    color: #130707;
     font-weight: bold;
     margin-top: 15px;
     font-size: 26px;
