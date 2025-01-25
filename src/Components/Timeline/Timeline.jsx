@@ -4,30 +4,30 @@ import './Timeline.css';
 const roadmapData = [
   {
     id: 1,
-    stage: 'January 25: Registrations Open',
+    stage: 'January 25, 2025: Registrations Open',
     details: [
-      'The build-a-thon officially kicks off! Registrations will open. It’s time to choose your roles and dive into the challenge head-on.',
+      'Kick off your journey! Sign up to join this exciting buildathon.',
     ],
   },
   {
     id: 2,
-    stage: 'February 15: Registration Closes',
+    stage: 'February 15, 2025: Registration Closes',
     details: [
-      'Don’t miss out! Make sure to register by February 15, as this is your final chance to secure a spot in the competition.',
+      'Last chance to register! Secure your spot before time runs out.',
     ],
   },
   {
     id: 3,
-    stage: 'February 17: Assignment of Roles and mail participants',
+    stage: 'February 17, 2025:  Role Assignment & Participant Emails',
     details: [
-      'During this period, participants will be assigned with their respective roles based on the prefernces through mail on a first come first serve basis.',
+      'Get ready! Roles will be assigned, and participants informed.',
     ],
   },
   {
     id: 4,
-    stage: 'February 19 and 20: Envision 2.0 starts',
+    stage: 'February 19 and 20, 2025: Envision 2.0',
     details: [
-      'Participants will come to the venue physically, network with other participants, collaborate and form teams based on mutual interest. Based on this they will build and consrtuct products with collaborted team members and --- ',
+      'The big days are here! Brainstorm, build, and pitch your prototype to the judges.',
     ],
   },
 ];

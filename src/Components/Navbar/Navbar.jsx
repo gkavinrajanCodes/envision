@@ -29,6 +29,7 @@ const Navbar = () => {
         <li><Link to='about' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About Envision</Link></li>
         <li><Link to='program' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Roles</Link></li>
         <li><Link to='timeline' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Timeline</Link></li>
+        <li><Link to='faq' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>Guidelines</Link></li>
         <li><Link to='gallery' smooth = 'true' offset={-170} duration={500} onClick={closeMenu}>Gallery</Link></li>
         <li><Link to='aboutieee' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About IEEECS</Link></li>
         <li><button className='btn'><Link to='contact' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Contact us</Link></button></li>

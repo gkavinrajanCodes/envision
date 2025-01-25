@@ -6,7 +6,7 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "Guidelines for ENVISION 2.0:",
+      question: "Rules",
       answer:
         "During registration, participants must indicate their order of preference for roles (Strategist, Developer, Designer).\nRoles will be allotted based on availability, and once confirmed, they cannot be changed.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.",
     },
@@ -38,12 +38,12 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id = 'faq'>
       <button
         className="faq-button"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span>Guidelines and Frequently Asked Questions</span>
+        <span>Guidelines</span>
         <span className={`arrow ${isOpen ? 'open' : ''}`}>▼</span>
       </button>
 
