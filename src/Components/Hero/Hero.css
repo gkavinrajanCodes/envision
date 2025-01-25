@@ -8,48 +8,51 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 20px 20px; /* Add more top padding to create space */
+    box-sizing: border-box;
 }
 
 .hero-text {
     text-align: center;
     max-width: 800px;
+    margin: 20px auto 0; /* Add top margin if needed for spacing */
 }
 
+
 .hero-text h1 {
-    font-size: 60px;
+    font-size: clamp(30px, 5vw, 60px);
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .hero-text p {
     max-width: 700px;
     margin: 10px auto 20px;
-    line-height: 1.4;
-    font-size: large;
+    line-height: 1.6;
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 .cash-prize {
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: center;
     color: #130707;
     font-family: 'Arial', sans-serif;
 }
 
 .cash-prize h2 {
-    font-size: 36px;
+    font-size: clamp(24px, 3vw, 36px);
     font-weight: bold;
     color: #ffcc00;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
 }
 
 .prize-list {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 30px;
-    position: relative;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -58,86 +61,71 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    font-size: 24px;
+    font-size: clamp(16px, 2vw, 24px);
     font-weight: 700;
     background: rgba(255, 255, 255, 0.922);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     width: 120px;
-    height: 200px;
-    position: relative;
+    height: clamp(160px, 15vw, 240px);
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prize-item:hover {
+    transform: scale(1.05);
 }
 
 .prize-item .emoji {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: clamp(24px, 3vw, 36px);
+    margin-bottom: 10px;
 }
 
 .prize-item .amount {
     color: #130707;
     font-weight: bold;
-    margin-top: 15px;
-    font-size: 26px;
+    margin-top: 10px;
+    font-size: clamp(18px, 2.5vw, 26px);
 }
 
-.prize-item:first-child {
-    height: 220px;
-}
-
-.prize-item:nth-child(2) {
-    height: 240px;
-}
-
-.prize-item:nth-child(3) {
-    height: 200px;
+.event-dates {
+    background: rgba(255, 255, 255, 0.8);
+    color: #130707;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 850px) {
-    .hero-text h1 {
-        font-size: 40px;
-    }
-    .cash-prize h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
     .prize-list {
-        gap: 20px;
+        gap: 15px;
     }
 
     .prize-item {
         width: 100px;
-        height: 160px;
-        font-size: 20px;
-    }
-
-    .prize-item:first-child {
-        height: 170px;
-    }
-
-    .prize-item:nth-child(2) {
         height: 180px;
-    }
-
-    .prize-item:nth-child(3) {
-        height: 150px;
     }
 }
 
 @media (max-width: 650px) {
     .hero-text h1 {
-        font-size: 30px;
-        max-width: 400px;
+        font-size: clamp(24px, 5vw, 36px);
+        max-width: 90%;
         margin: auto;
     }
     .hero-text p {
         font-size: 14px;
-        margin: 15px auto 30px;
+        margin: 10px auto 20px;
     }
+
     .cash-prize h2 {
-        font-size: 24px;
+        font-size: clamp(18px, 4vw, 28px);
         margin-bottom: 15px;
     }
 
@@ -149,19 +137,6 @@
 
     .prize-item {
         width: 90px;
-        height: 140px;
-        font-size: 18px;
-    }
-
-    .prize-item:first-child {
         height: 160px;
-    }
-
-    .prize-item:nth-child(2) {
-        height: 150px;
-    }
-
-    .prize-item:nth-child(3) {
-        height: 140px;
     }
 }

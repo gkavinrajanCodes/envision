@@ -21,7 +21,7 @@ const App = () => {
       <Hero/>
       <div className='container'>
         <About/>
-        <Title subtitle = 'Our Sponsors' title = ''/>
+        <Title subtitle = 'Organised By' title = ''/>
         <Sponsors/>
         <Title subtitle = 'Roles' title = 'Choose your Path'/>
         <Programs/>

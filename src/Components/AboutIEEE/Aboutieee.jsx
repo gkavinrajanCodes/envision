@@ -1,7 +1,6 @@
 import React from 'react'
 import './Aboutieee.css'
 import ieeecs_logo from '../../assets/ieeecs.png'
-import vasukiimage from '../../assets/vasuki.jpg'
 
 const Aboutieee = () => {
   return (
@@ -24,3 +23,4 @@ const Aboutieee = () => {
 }
 
 export default Aboutieee
+

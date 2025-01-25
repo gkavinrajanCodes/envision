@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
-import { Loader2 } from 'lucide-react';  // This should now work
+import { Loader2 } from 'lucide-react'; // This should now work
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -12,7 +12,7 @@ const Hero = () => {
     setError(null);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise((resolve) => setTimeout(resolve, 500));
       // Replace with your Google Form URL
       window.location.href = 'https://forms.gle/Ykh9EK8gGkT6pW5S6';
     } catch (err) {
@@ -28,6 +28,14 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Welcome to ENVISION 2025</h1>
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
+
+        {/* Event Dates Section */}
+        <div className="event-dates">
+  <h3>Mark Your Calendars</h3>
+  <p>February 19-20, 2025</p>
+</div>
+
+
         <div className="cash-prize">
           <h2>Amazing Cash Prizes Await</h2>
           <div className="prize-list">
@@ -48,7 +56,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <button 
+
+        <button
           className={`btn register-btn ${isLoading ? 'loading' : ''}`}
           onClick={handleRegisterClick}
           disabled={isLoading}

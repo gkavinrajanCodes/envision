@@ -25,7 +25,7 @@ const roadmapData = [
   },
   {
     id: 4,
-    stage: 'February 19 and 20, 2025: Envision 2.0',
+    stage: 'February 19 and 20, 2025: Envision',
     details: [
       'The big days are here! Brainstorm, build, and pitch your prototype to the judges.',
     ],
