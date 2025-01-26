@@ -13,6 +13,7 @@ import FAQ from './Components/FAQ/FAQ'
 import RegistrationFee from './Components/RegistrationFee/RegistrationFee'
 import Sponsors from './Components/Sponsors/Sponsors'
 import Reach from './Components/Reach/Reach'
+import Coordinator from './Components/Coordinator/Coordinator'
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Title subtitle = 'GALLERY' title = 'Past Envision'/>
         <Campus/>
         <Aboutieee/>
+        <Coordinator/>
         <Reach/>
         <Title subtitle = 'CONTACT US' title = 'Get in Touch'/>
         <Contact/>
