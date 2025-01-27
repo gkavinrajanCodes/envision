@@ -10,7 +10,7 @@ const Coordinator = () => {
 
       {/* Faculty Coordinators */}
       <div className="section">
-        <h2 className="subtitle">FACULTY COORDINATORS</h2>
+        <h2 className="subtitle">FACULTY COORDINATOR</h2>
         <div className="cards-container">
           <div className="card faculty-card">
             <div className="card-image-container">
@@ -22,8 +22,8 @@ const Coordinator = () => {
             </div>
             <div className="card-content">
               <h3>Dr. Vasuki P</h3>
-              <p>Associate Professor</p>
-              <p>Dept. of Information Technology</p>
+              <p>IEEECS - SB - Faculty Advisor</p>
+              <p>IIC - Chair, SSNCE</p>
             </div>
           </div>
         </div>
@@ -33,28 +33,7 @@ const Coordinator = () => {
       <div className="section">
         <h2 className="subtitle">STUDENT COORDINATORS</h2>
         <div className="responsive-columns">
-          {/* Third Year Coordinators */}
-          <div className="column">
-            <h3 className="year-title">Third Year</h3>
-            <div className="card">
-              <h4>Dunya Syed Hassan</h4>
-              <p>Joint Secretary</p>
-              <p>73582 73227</p>
-              <p>dunya2210430@ssn.edu.in</p>
-            </div>
-            <div className="card">
-              <h4>Chandravel S</h4>
-              <p>General Secretary</p>
-              <p>73059 75595</p>
-              <p>chandravel2210400@ssn.edu.in</p>
-            </div>
-            <div className="card">
-              <h4>Nitish Kumar S</h4>
-              <p>Event Management Head</p>
-              <p>63748 51149</p>
-              <p>nithishkumar2210202@ssn.edu.in</p>
-            </div>
-          </div>
+
 
           {/* Fourth Year Coordinators */}
           <div className="column">
@@ -88,6 +67,29 @@ const Coordinator = () => {
               <p>Treasurer</p>
               <p>63851 54151</p>
               <p>priyanka2110274@ssn.edu.in</p>
+            </div>
+          </div>
+
+          {/* Third Year Coordinators */}
+          <div className="column">
+            <h3 className="year-title">Third Year</h3>
+            <div className="card">
+              <h4>Dunya Syed Hassan</h4>
+              <p>Joint Secretary</p>
+              <p>73582 73227</p>
+              <p>dunya2210430@ssn.edu.in</p>
+            </div>
+            <div className="card">
+              <h4>Chandravel S</h4>
+              <p>General Secretary</p>
+              <p>73059 75595</p>
+              <p>chandravel2210400@ssn.edu.in</p>
+            </div>
+            <div className="card">
+              <h4>Nithish Kumar S</h4>
+              <p>Event Management Head</p>
+              <p>63748 51149</p>
+              <p>nithishkumar2210202@ssn.edu.in</p>
             </div>
           </div>
         </div>
