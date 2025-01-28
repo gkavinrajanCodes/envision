@@ -23,7 +23,7 @@ const Coordinator = () => {
             <div className="card-content">
               <h3>Dr. Vasuki P</h3>
               <p>IEEECS - SB - Faculty Advisor</p>
-              <p>IIC - Chair, SSNCE</p>
+              <p>IIC - Convener, SSNCE</p>
             </div>
           </div>
         </div>
