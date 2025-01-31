@@ -89,6 +89,7 @@ const Coordinator = () => {
               <h4>Nithish Kumar S</h4>
               <p>Event Management Head</p>
               <p>63748 51149</p>
+              <p>98945 94609</p>
               <p>nithishkumar2210202@ssn.edu.in</p>
             </div>
           </div>
