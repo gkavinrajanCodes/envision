@@ -31,10 +31,13 @@ const Hero = () => {
 
         {/* Event Dates Section */}
         <div className="event-dates">
-  <h3>Mark Your Calendars</h3>
-  <p>February 19-20, 2025</p>
-</div>
-
+          <h3>Mark Your Calendars</h3>
+          <p>February 19-20, 2025</p>
+        </div>
+        
+        <div className="registration-deadline">
+          <h3>Registration Deadline: 15 February 2025</h3>
+        </div>
 
         <div className="cash-prize">
           <h2>Amazing Cash Prizes Await</h2>

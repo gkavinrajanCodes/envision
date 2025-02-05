@@ -12,7 +12,7 @@ const FAQ = () => {
       question: "Team Composition",
       emoji: "👥",
       answer:
-        "Each team will consist of one Strategist, two Developers, and one Designer. Teams will be finalized at the start of the event. Once formed, changes to team composition are not allowed.",
+        "Each team will consist of one Strategist, two Developers, and one Designer. Participants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
     },
     {
       question: "Problem Statements",
