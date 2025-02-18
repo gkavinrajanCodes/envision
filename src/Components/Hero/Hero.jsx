@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
 import { Loader2 } from 'lucide-react'; // This should now work
+import CountdownClock from '../CountdownClock/CountdownClock';
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,14 +31,6 @@ const Hero = () => {
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
 
         {/* Event Dates Section */}
-        <div className="event-dates">
-          <h3>Mark Your Calendars</h3>
-          <p>February 19-20, 2025</p>
-        </div>
-        
-        <div className="registration-deadline">
-          <h3>Registration Deadline: 15 February 2025</h3>
-        </div>
 
         <div className="cash-prize">
           <h2>Amazing Cash Prizes Await</h2>
@@ -59,24 +52,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
-        <button
-          className={`btn register-btn ${isLoading ? 'loading' : ''}`}
-          onClick={handleRegisterClick}
-          disabled={isLoading}
-        >
-          {isLoading ? (
-            <>
-              <Loader2 className="animate-spin mr-2" size={20} />
-              Redirecting...
-            </>
-          ) : (
-            <>
-              Register Here <img src={dark_arrow} alt="" />
-            </>
-          )}
-        </button>
-        {error && <p className="error-message mt-2 text-red-500">{error}</p>}
       </div>
     </div>
   );
