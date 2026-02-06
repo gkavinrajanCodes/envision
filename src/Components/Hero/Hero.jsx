@@ -38,17 +38,17 @@ const Hero = () => {
             <div className="prize-item">
               <span className="emoji">🥈</span>
               <span>2nd Prize</span>
-              <span className="amount">₹4,000</span>
+              <span className="amount">₹10,000</span>
             </div>
             <div className="prize-item">
               <span className="emoji">🏆</span>
               <span>1st Prize</span>
-              <span className="amount">₹7,000</span>
+              <span className="amount">₹15,000</span>
             </div>
             <div className="prize-item">
               <span className="emoji">🥉</span>
               <span>3rd Prize</span>
-              <span className="amount">₹2,000</span>
+              <span className="amount">₹5,000</span>
             </div>
           </div>
         </div>
