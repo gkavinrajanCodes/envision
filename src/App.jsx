@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
+import DateBanner from './Components/DateBanner/DateBanner'
 import Programs from './Components/Programs/Programs'
 import Title from './Components/Title/Title'
 import About from './Components/About/About'
@@ -20,16 +21,16 @@ const App = () => {
     <div>
       <Navbar/>
       <Hero/>
+      <DateBanner/>
       <div className='container'>
         <About/>
         <Title subtitle = 'Organised By' title = ''/>
         <Sponsors/>
-        <Title subtitle = 'Roles' title = 'Choose your Path'/>
-        <Programs/>
+{/* 
         <Title subtitle = 'Timeline' title = 'From concept to conquest'/>
-        <Timeline/>
+        <Timeline/> */}
         <RegistrationFee/>
-        <Title subtitle = 'Guidelines' title = 'Envision 2025 Participation Guidelines'/>
+        <Title subtitle = 'Guidelines' title = 'Envision 2026 Participation Guidelines'/>
         <FAQ/>
         <Title subtitle = 'GALLERY' title = 'Past Envision'/>
         <Campus/>

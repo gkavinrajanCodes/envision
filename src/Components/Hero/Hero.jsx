@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <div className="hero container" id="hero">
       <div className="hero-text">
-        <h1>Welcome to ENVISION 2025</h1>
+        <h1>Welcome to ENVISION 2026</h1>
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
 
         {/* Event Dates Section */}

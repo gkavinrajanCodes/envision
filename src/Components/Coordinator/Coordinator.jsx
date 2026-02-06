@@ -39,34 +39,52 @@ const Coordinator = () => {
           <div className="column">
             <h3 className="year-title">Fourth Year</h3>
             <div className="card">
-              <h4>Priyamvadha Pradeep</h4>
+              <h4>Dunya Syed Hassan</h4>
               <p>Chairperson</p>
-              <p>95660 64483</p>
-              <p>priyamvadha2110269@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
             <div className="card">
-              <h4>Sanjjit S</h4>
+              <h4>Chandravel Saravanan</h4>
               <p>Co Chairperson</p>
-              <p>75502 79632</p>
-              <p>sanjjit2110378@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
             <div className="card">
-              <h4>Harshida S P</h4>
-              <p>Vice Chair</p>
-              <p>72009 95167</p>
-              <p>harshida2110349@ssn.edu.in</p>
+              <h4>Nithish Kumar S</h4>
+              <p>Vice Chairperson</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
             <div className="card">
-              <h4>Sanjai Balajee K G</h4>
+              <h4>R Rohan</h4>
               <p>Secretary</p>
-              <p>82202 67097</p>
-              <p>sanjai2110173@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
             <div className="card">
-              <h4>Priyanka Vijaybhaskar</h4>
+              <h4>K V Swetha</h4>
               <p>Treasurer</p>
-              <p>63851 54151</p>
-              <p>priyanka2110274@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>G. Kavin Rajan</h4>
+              <p>Web Master</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>Rupadharshini R</h4>
+              <p>Joint-Treasurer</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>Ritujaa B</h4>
+              <p>Design Head</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
           </div>
 
@@ -74,23 +92,46 @@ const Coordinator = () => {
           <div className="column">
             <h3 className="year-title">Third Year</h3>
             <div className="card">
-              <h4>Dunya Syed Hassan</h4>
+              <h4>Meghana Kumar</h4>
               <p>Joint Secretary</p>
-              <p>73582 73227</p>
-              <p>dunya2210430@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
             <div className="card">
-              <h4>Chandravel S</h4>
+              <h4>Amudhakavi S</h4>
               <p>General Secretary</p>
-              <p>73059 75595</p>
-              <p>chandravel2210400@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
             <div className="card">
-              <h4>Nithish Kumar S</h4>
+              <h4>Pranav Krishna P</h4>
+              <p>Technical Head</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>Darshan Parthasarathy</h4>
               <p>Event Management Head</p>
-              <p>63748 51149</p>
-              <p>98945 94609</p>
-              <p>nithishkumar2210202@ssn.edu.in</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>Thirumurugan RA</h4>
+              <p>Digital Marketing Head</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>Vishal Muralidharan</h4>
+              <p>Digital Marketing Head</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
+            </div>
+            <div className="card">
+              <h4>Akshayalakshmi S</h4>
+              <p>Editorial Head</p>
+              {/* <p>Phone</p> */}
+              {/* <p>Email</p> */}
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ const FlipCountdown = () => {
   });
 
   useEffect(() => {
-    const eventDate = new Date('2025-02-19T00:00:00').getTime();
+    const eventDate = new Date('2026-02-19T00:00:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();

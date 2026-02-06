@@ -4,28 +4,28 @@ import './Timeline.css';
 const roadmapData = [
   {
     id: 1,
-    stage: 'January 25, 2025: Registrations Open',
+    stage: 'January 25, 2026: Registrations Open',
     details: [
       'Kick off your journey! Sign up to join this exciting buildathon.',
     ],
   },
   {
     id: 2,
-    stage: 'February 15, 2025: Registration Closes',
+    stage: 'February 15, 2026: Registration Closes',
     details: [
       'Last chance to register! Secure your spot before time runs out.',
     ],
   },
   {
     id: 3,
-    stage: 'February 17, 2025:  Role Assignment & Participant Emails',
+    stage: 'February 17, 2026:  Role Assignment & Participant Emails',
     details: [
       'Get ready! Roles will be assigned, and participants informed.',
     ],
   },
   {
     id: 4,
-    stage: 'February 19 and 20, 2025: Envision',
+    stage: 'February 19 and 20, 2026: Envision',
     details: [
       'The big days are here! Brainstorm, build, and pitch your prototype to the judges.',
     ],
