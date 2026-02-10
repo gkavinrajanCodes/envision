@@ -3,6 +3,7 @@ import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
 import { Loader2 } from 'lucide-react'; // This should now work
 import CountdownClock from '../CountdownClock/CountdownClock';
+import heroVideo from '../../assets/envision-video.mp4';
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -26,30 +27,33 @@ const Hero = () => {
 
   return (
     <div className="hero container" id="hero">
+      <video autoPlay muted loop playsInline className="hero-video">
+        <source src={heroVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="hero-overlay"></div>
       <div className="hero-text">
-        <h1>Welcome to ENVISION 2026</h1>
+        <h1>ENVISION 2026</h1>
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
+      </div>
 
-        {/* Event Dates Section */}
-
-        <div className="cash-prize">
-          <h2>Amazing Cash Prizes Await</h2>
-          <div className="prize-list">
-            <div className="prize-item">
-              <span className="emoji">🥈</span>
-              <span>2nd Prize</span>
-              <span className="amount">₹10,000</span>
-            </div>
-            <div className="prize-item">
-              <span className="emoji">🏆</span>
-              <span>1st Prize</span>
-              <span className="amount">₹15,000</span>
-            </div>
-            <div className="prize-item">
-              <span className="emoji">🥉</span>
-              <span>3rd Prize</span>
-              <span className="amount">₹5,000</span>
-            </div>
+      <div className="cash-prize">
+        <h2>WIN BIG</h2>
+        <div className="prize-list">
+          <div className="prize-item prize-second">
+            <span className="emoji">🥈</span>
+            <span>2nd Prize</span>
+            <span className="amount">₹10,000</span>
+          </div>
+          <div className="prize-item prize-first">
+            <span className="emoji">🏆</span>
+            <span>1st Prize</span>
+            <span className="amount">₹15,000</span>
+          </div>
+          <div className="prize-item prize-third">
+            <span className="emoji">🥉</span>
+            <span>3rd Prize</span>
+            <span className="amount">₹5,000</span>
           </div>
         </div>
       </div>
