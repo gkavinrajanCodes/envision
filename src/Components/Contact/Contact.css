@@ -9,11 +9,11 @@
 
 .contact-col {
     flex-basis: 48%;
-    color: #374151;
+    color: #b0b0b0;
 }
 
 .contact-col h3 {
-    color: #000000;
+    color: #e5e5e5;
     font-weight: 600;
     font-size: clamp(20px, 4vw, 28px);
     display: flex;
@@ -47,9 +47,9 @@
 .contact form input, .contact form textarea {
     display: block;
     width: 100%;
-    background: #F9FAFB;
+    background: #1a1a1a;
     padding: 14px 16px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #2a2a2a;
     border-radius: 8px;
     outline: none;
     margin-bottom: 16px;
@@ -58,10 +58,11 @@
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     transition: border-color 0.3s ease;
+    color: #e5e5e5;
 }
 
 .contact form input:focus, .contact form textarea:focus {
-    border-color: #1E40AF;
+    border-color: #60A5FA;
 }
 
 .contact-col span {
@@ -71,10 +72,10 @@
   
 .map-container {
     margin-top: 24px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .map-container iframe {

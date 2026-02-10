@@ -61,7 +61,7 @@ nav ul li .btn {
 }
 
 nav ul li .btn:hover {
-    background: #000000;
+    background: #3B82F6;
     transform: translateY(-2px);
 }
 
@@ -70,9 +70,9 @@ nav ul li .btn a {
 }
 
 .dark-nav {
-    background: #FFFFFF;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    color: #000000;
+    background: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    color: #e5e5e5;
 }
 
 .dark-nav ul li a:hover {
@@ -112,14 +112,14 @@ nav ul li .btn a {
         top: 0;
         right: 0;
         bottom: 0;
-        background: #FFFFFF;
+        background: #1a1a1a;
         z-index: 1000;
         width: 240px;
         padding-top: 80px;
         transition: right 0.4s ease;
         flex-direction: column;
-        box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
-        color: #000000;
+        box-shadow: -4px 0 16px rgba(0, 0, 0, 0.5);
+        color: #e5e5e5;
     }
     
     nav ul li {
@@ -130,11 +130,11 @@ nav ul li .btn a {
     }
 
     nav ul li a {
-        color: #000000;
+        color: #e5e5e5;
     }
 
     nav ul li a:hover {
-        color: #1E40AF;
+        color: #60A5FA;
     }
     
     .menu-icon {

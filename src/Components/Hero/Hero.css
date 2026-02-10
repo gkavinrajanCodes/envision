@@ -41,7 +41,7 @@
         justify-content: flex-start;
         align-items: stretch;
         padding: 70px 20px 20px;
-        background: #000;
+        background: #0f0f0f;
         min-height: auto;
         gap: 32px;
     }
@@ -63,7 +63,7 @@
 
     .hero-text {
         order: 1;
-        background: #000;
+        background: #0f0f0f;
         padding: 32px 20px;
         margin: 0;
         max-width: 100%;
@@ -72,7 +72,7 @@
 
     .cash-prize {
         order: 3;
-        background: #000;
+        background: #0f0f0f;
         padding: 0 16px 32px;
         margin: 0;
         max-width: 100%;
@@ -170,9 +170,9 @@
 }
 
 .register-btn:hover:not(:disabled) {
-    background: #000000;
+    background: #3B82F6;
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
 }
 
 .register-btn:disabled {

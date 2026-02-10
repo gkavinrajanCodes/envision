@@ -1,11 +1,11 @@
 .date-banner {
   width: 100%;
-  background: #FFFFFF;
+  background: #0f0f0f;
   padding: 64px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #E5E7EB;
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .date-content {
@@ -15,7 +15,7 @@
 .date-main {
   font-size: clamp(40px, 8vw, 80px);
   font-weight: 800;
-  color: #000000;
+  color: #e5e5e5;
   margin: 0;
   letter-spacing: 2px;
   font-family: 'Bebas Neue', 'Inter', sans-serif;
@@ -32,7 +32,7 @@
 .date-subtitle {
   font-size: clamp(14px, 2vw, 18px);
   font-weight: 600;
-  color: #374151;
+  color: #b0b0b0;
   margin: 0;
   letter-spacing: 3px;
   text-transform: uppercase;

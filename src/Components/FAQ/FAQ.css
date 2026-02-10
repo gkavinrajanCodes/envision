@@ -23,7 +23,7 @@
 }
 
 .faq-button:hover {
-    background: #1E3A8A;
+    background: #2563EB;
     transform: translateY(-2px);
 }
 
@@ -42,8 +42,8 @@
 }
 
 .faq-item {
-    background: #FFFFFF;
-    border: 1px solid #E5E7EB;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
     padding: 20px 24px;
     margin-bottom: 16px;
@@ -51,13 +51,13 @@
 }
 
 .faq-item:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .faq-question {
     font-size: clamp(16px, 3vw, 18px);
     font-weight: 600;
-    color: #000000;
+    color: #e5e5e5;
     margin-bottom: 12px;
     display: flex;
     align-items: flex-start;
@@ -71,7 +71,7 @@
 }
 
 .faq-answer {
-    color: #374151;
+    color: #b0b0b0;
     line-height: 1.8;
     white-space: pre-line;
     padding-top: 8px;

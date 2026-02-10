@@ -20,7 +20,7 @@
 .aboutieee_img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .aboutieee h3 {
@@ -34,14 +34,14 @@
 
 .aboutieee h2 {
     font-size: clamp(28px, 5vw, 42px);
-    color: #000000;
+    color: #e5e5e5;
     margin: 0 0 24px;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .aboutieee p {
-    color: #374151;
+    color: #b0b0b0;
     margin-bottom: 16px;
     line-height: 1.8;
     font-size: 16px;
@@ -63,7 +63,7 @@
     font-weight: 600;
     font-size: 15px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .social-link.linkedin {

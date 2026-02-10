@@ -1,5 +1,5 @@
 .sponsor-section {
-  background-color: #FFFFFF;
+  background-color: #0f0f0f;
   padding: 64px 0;
   text-align: center;
 }
@@ -8,7 +8,7 @@
   font-size: clamp(20px, 4vw, 28px);
   font-weight: 600;
   margin-bottom: 48px;
-  color: #000000;
+  color: #e5e5e5;
 }
 
 .sponsor-logos {

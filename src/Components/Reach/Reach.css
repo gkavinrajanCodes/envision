@@ -12,21 +12,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000000;
-    background: #FFFFFF;
+    color: #e5e5e5;
+    background: #1a1a1a;
     padding: 20px 24px;
     border-radius: 12px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #2a2a2a;
     transition: all 0.3s ease;
   }
   
   .reach-heading:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   
   .toggle-icon {
     font-size: 18px;
-    color: #374151;
+    color: #b0b0b0;
     transition: transform 0.3s ease;
   }
   
@@ -39,25 +39,25 @@
     margin-bottom: 16px;
     padding: 20px 24px;
     border-radius: 12px;
-    background: #FFFFFF;
-    border: 1px solid #E5E7EB;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
     transition: all 0.3s ease;
   }
   
   .faq-item:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   
   .faq-question {
     font-size: clamp(16px, 3vw, 18px);
     font-weight: 600;
-    color: #000000;
+    color: #e5e5e5;
     margin: 0 0 8px;
   }
   
   .faq-answer {
     font-size: 15px;
-    color: #374151;
+    color: #b0b0b0;
     margin: 0;
     white-space: pre-line;
     line-height: 1.7;

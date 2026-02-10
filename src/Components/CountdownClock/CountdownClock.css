@@ -5,7 +5,7 @@
   }
   
   .flip-countdown-title {
-    color: #000000;
+    color: #e5e5e5;
     font-size: clamp(24px, 3vw, 32px);
     font-weight: 600;
     margin-bottom: 40px;
@@ -31,9 +31,9 @@
     position: relative;
     width: 70px;
     height: 90px;
-    background-color: #FFFFFF;
+    background-color: #1a1a1a;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
   }
   
@@ -46,8 +46,8 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 48px;
     font-weight: 600;
-    color: #1E40AF;
-    background: #FFFFFF;
+    color: #60A5FA;
+    background: #1a1a1a;
     border-radius: 12px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -55,7 +55,7 @@
   
   .flip-label {
     font-size: 14px;
-    color: #374151;
+    color: #b0b0b0;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;

@@ -24,7 +24,7 @@
 }
 
 .next-btn:hover, .back-btn:hover {
-    background: #000000;
+    background: #2563EB;
     transform: translateY(-50%) scale(1.05);
 }
 
@@ -51,11 +51,11 @@
 }
 
 .slide {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     padding: 32px;
     border-radius: 12px;
-    background: #FFFFFF;
-    color: #374151;
+    background: #1a1a1a;
+    color: #b0b0b0;
     line-height: 1.6;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .user-info h3 {
-    color: #000000;
+    color: #e5e5e5;
     font-weight: 600;
 }
 

@@ -9,8 +9,8 @@
 }
 
 body {
-    background: #FFFFFF;
-    color: #374151;
+    background: #0f0f0f;
+    color: #e5e5e5;
     line-height: 1.6;
 }
 
@@ -55,9 +55,9 @@ a {
 }
 
 .btn:hover {
-    background: #1E3A8A;
+    background: #2563EB;
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(30, 64, 175, 0.2);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.4);
 }
 
 .btn.btn-outline {

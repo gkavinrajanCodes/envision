@@ -7,7 +7,7 @@
   
   .fee-header {
     font-size: clamp(28px, 5vw, 42px);
-    color: #000000;
+    color: #e5e5e5;
     margin-bottom: 48px;
     font-weight: 700;
   }
@@ -25,16 +25,16 @@
     flex-basis: 320px;
     padding: 32px;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    background: #FFFFFF;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    background: #1a1a1a;
     text-align: left;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #2a2a2a;
     transition: all 0.3s ease;
   }
   
   .fee-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   }
   
   /* Card-specific styling */
@@ -43,27 +43,27 @@
   }
   
   .non-ieee-card {
-    border-top: 3px solid #000000;
+    border-top: 3px solid #60A5FA;
   }
   
   /* Card content styling */
   .fee-card h3 {
     font-size: clamp(20px, 3vw, 24px);
     margin-bottom: 16px;
-    color: #000000;
+    color: #e5e5e5;
     font-weight: 600;
   }
   
   .fee-price {
     font-size: clamp(32px, 5vw, 42px);
     font-weight: 700;
-    color: #000000;
+    color: #e5e5e5;
     margin: 16px 0;
   }
   
   .fee-description {
     font-size: 16px;
-    color: #374151;
+    color: #b0b0b0;
     line-height: 1.7;
   }
   
