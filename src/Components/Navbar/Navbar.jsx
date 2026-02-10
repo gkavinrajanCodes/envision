@@ -22,17 +22,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className = {`container ${sticky ? 'dark-nav': ''}`}>
-      <img src={logo} alt="" className='logo' />
-      <ul className= {mobileMenu ? 'hide-mobile-menu' : ''}>
-        <li><Link to='hero' smooth = 'true' offset={0} duration={500} onClick={closeMenu}>Home</Link></li>
-        <li><Link to='about' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About Envision</Link></li>
-        <li><Link to='faq' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Guidelines</Link></li>
-        <li><Link to='gallery' smooth = 'true' offset={-200} duration={500} onClick={closeMenu}>Gallery</Link></li>
-        <li><Link to='aboutieee' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About IEEECS</Link></li>
-        <li><button className='btn'><Link to='contact' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Contact us</Link></button></li>
-      </ul>
-      <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
+    <nav className={sticky ? 'dark-nav': ''}>
+      <div className='container nav-container'>
+        <img src={logo} alt="" className='logo' />
+        <ul className= {mobileMenu ? 'hide-mobile-menu' : ''}>
+          <li><Link to='hero' smooth = 'true' offset={0} duration={500} onClick={closeMenu}>Home</Link></li>
+          <li><Link to='about' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About Envision</Link></li>
+          <li><Link to='faq' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Guidelines</Link></li>
+          <li><Link to='gallery' smooth = 'true' offset={-200} duration={500} onClick={closeMenu}>Gallery</Link></li>
+          <li><Link to='aboutieee' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About IEEECS</Link></li>
+          <li><button className='btn'><Link to='contact' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Contact us</Link></button></li>
+        </ul>
+        <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
+      </div>
     </nav>
   );
 };
