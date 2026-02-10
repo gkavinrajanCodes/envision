@@ -33,7 +33,21 @@ const Hero = () => {
       </video>
       <div className="hero-overlay"></div>
       <div className="hero-text">
+        {/* <div className="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          24Hr National Level Hackathon
+        </div> */}
         <h1>ENVISION 2026</h1>
+        <div className="hero-location">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          SSN College of Engineering
+        </div>
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
         <button 
           className="register-btn"
@@ -44,22 +58,23 @@ const Hero = () => {
       </div>
 
       <div className="cash-prize">
-        <h2>WIN BIG</h2>
-        <div className="prize-list">
-          <div className="prize-item prize-second">
-            <span className="emoji">🥈</span>
-            <span>2nd Prize</span>
-            <span className="amount">₹10,000</span>
+        <div className="prize-pool-banner">
+          <span className="pool-label">Prize Pool</span>
+          <span className="pool-amount">₹30,000</span>
+        </div>
+        
+        <div className="prizes-grid">
+          <div className="prize-card">
+            <span className="prize-label">1st Prize</span>
+            <span className="prize-amount">₹15,000</span>
           </div>
-          <div className="prize-item prize-first">
-            <span className="emoji">🏆</span>
-            <span>1st Prize</span>
-            <span className="amount">₹15,000</span>
+          <div className="prize-card">
+            <span className="prize-label">2nd Prize</span>
+            <span className="prize-amount">₹10,000</span>
           </div>
-          <div className="prize-item prize-third">
-            <span className="emoji">🥉</span>
-            <span>3rd Prize</span>
-            <span className="amount">₹5,000</span>
+          <div className="prize-card">
+            <span className="prize-label">3rd Prize</span>
+            <span className="prize-amount">₹5,000</span>
           </div>
         </div>
       </div>
