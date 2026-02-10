@@ -26,8 +26,7 @@ const App = () => {
         <About/>
         <Title subtitle = 'Organised By' title = ''/>
         <Sponsors/>
-{/* 
-        <Title subtitle = 'Timeline' title = 'From concept to conquest'/>
+        {/* <Title subtitle = 'Timeline' title = 'From concept to conquest'/>
         <Timeline/> */}
         <RegistrationFee/>
         <Title subtitle = 'Guidelines' title = 'Envision 2026 Participation Guidelines'/>
