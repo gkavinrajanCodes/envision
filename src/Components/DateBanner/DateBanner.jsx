@@ -5,7 +5,7 @@ const DateBanner = () => {
   return (
     <div className="date-banner">
       <div className="date-content">
-        <h2 className="date-main">25 & 26 MARCH 2026</h2>
+        <h2 className="date-main">19 & 20 FEBRUARY 2026</h2>
         <div className="date-divider"></div>
         <p className="date-subtitle">TWO DAYS OF INNOVATION</p>
       </div>
