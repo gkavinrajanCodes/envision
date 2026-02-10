@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sponsors.css'
-import sponsor1 from '../../assets/ieeecs-ssn.png'
+import sponsor1 from '../../assets/ieeecs-ssn-dark.png'
 import sponsor2 from '../../assets/iic.png'
 import sponsor3 from '../../assets/SSN-01.png'
 
