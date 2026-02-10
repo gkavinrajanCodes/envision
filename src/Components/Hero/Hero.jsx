@@ -16,7 +16,7 @@ const Hero = () => {
     try {
       await new Promise((resolve) => setTimeout(resolve, 500));
       // Replace with your Google Form URL
-      window.location.href = 'https://forms.gle/Zxuny4uLUAQ5V77k6';
+      window.location.href;
     } catch (err) {
       setError('Unable to open registration form. Please try again.');
       console.error('Registration error:', err);
