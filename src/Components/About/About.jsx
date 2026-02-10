@@ -12,11 +12,8 @@ const About = () => {
             <h3>About ENVISION</h3>
             <h2>Where ideas meet possibilities</h2>
             <p>
-                Envision 2026 builds upon the success of its inaugural season by transforming into a two-day buildathon where creativity meets collaboration. This dynamic event brings together developers, designers, and strategists to form cross-disciplinary teams and transform ideas into impactful product prototypes.             
-            </p>
-            <p>
-                Whether you're coding the backbone, crafting stunning user experiences, or strategizing bold solutions, Envision 2026 is your chance to showcase your skills. With expert mentorship, collaborative synergy, and a focus on innovation, teams will work tirelessly to create, refine, and pitch their projects to an esteemed panel of judges. It's more than just a competition—it’s where visions come to life.
-            </p>
+            Envision 2026 is a 24-hour hackathon where teams come together to build working prototypes from scratch. Over the course of the event, participants develop their ideas, incorporate feedback, and pitch their solutions to a panel of judges. It's a chance to turn ambitious concepts into real products and connect with others who are equally driven to create something meaningful.
+           </p>
         </div>
     </div>
   )
