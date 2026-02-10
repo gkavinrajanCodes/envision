@@ -26,7 +26,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero container" id="hero">
+    <div className="hero" id="hero">
       <video autoPlay muted loop playsInline className="hero-video">
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
@@ -35,6 +35,21 @@ const Hero = () => {
       <div className="hero-text">
         <h1>ENVISION 2026</h1>
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
+        <button 
+          onClick={handleRegisterClick} 
+          className="register-btn"
+          disabled={isLoading}
+        >
+          {isLoading ? (
+            <>
+              <Loader2 className="spinner" size={20} />
+              Redirecting...
+            </>
+          ) : (
+            'Register Now'
+          )}
+        </button>
+        {error && <p className="error-message">{error}</p>}
       </div>
 
       <div className="cash-prize">
