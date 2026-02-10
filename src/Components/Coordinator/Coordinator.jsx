@@ -3,12 +3,8 @@ import React from "react";
 import "./Coordinator.css";
 import facultyCoordinatorPhoto from "../../assets/vasuki.jpg"; // Update path as needed
 
-const Coordinator = () => {
+const FacultyCoordinator = () => {
   return (
-    <div className="coordinator-container">
-      <h1 className="title">COORDINATORS</h1>
-
-      {/* Faculty Coordinators */}
       <div className="section">
         <h2 className="subtitle">FACULTY COORDINATOR</h2>
         <div className="cards-container">
@@ -28,9 +24,12 @@ const Coordinator = () => {
           </div>
         </div>
       </div>
+  );
+};
 
-      {/* Student Coordinators */}
-      <div className="section">
+const StudentCoordinators = () => {
+  return (
+    <div className="section">
         <h2 className="subtitle">STUDENT COORDINATORS</h2>
         <div className="responsive-columns">
 
@@ -136,6 +135,20 @@ const Coordinator = () => {
           </div>
         </div>
       </div>
+  );
+};
+
+const Coordinator = () => {
+  return (
+    <div className="coordinator-container">
+      <h1 className="title">COORDINATORS</h1>
+
+      {/* Faculty Coordinators */}
+      <FacultyCoordinator />
+
+      {/* Student Coordinators */}
+      {/* <StudentCoordinators /> */}
+
     </div>
   );
 };
