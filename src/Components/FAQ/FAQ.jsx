@@ -6,13 +6,13 @@ const FAQ = () => {
       question: "Rules",
       emoji: "📜",
       answer:
-        "During registration, participants must indicate their order of preference for roles (Strategist, Developer, Designer).\nRoles will be allotted based on availability, and once confirmed, they cannot be changed.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.",
+        "Please note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.",
     },
     {
       question: "Team Composition",
       emoji: "👥",
       answer:
-        "Each team will consist of one Strategist, two Developers, and one Designer. Participants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
+        "Participants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
     },
     {
       question: "Problem Statements",
