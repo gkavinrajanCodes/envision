@@ -36,20 +36,11 @@ const Hero = () => {
         <h1>ENVISION 2026</h1>
         <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
         <button 
-          onClick={handleRegisterClick} 
           className="register-btn"
-          disabled={isLoading}
+          disabled={true}
         >
-          {isLoading ? (
-            <>
-              <Loader2 className="spinner" size={20} />
-              Redirecting...
-            </>
-          ) : (
-            'Register Now'
-          )}
+          Registrations opening tonight!
         </button>
-        {error && <p className="error-message">{error}</p>}
       </div>
 
       <div className="cash-prize">
