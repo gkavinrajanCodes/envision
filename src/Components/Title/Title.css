@@ -1,16 +1,31 @@
 .title1 {
     text-align: center;
-    color: #212EA0;
-    font-size: 20px;
+    color: #1E40AF;
+    font-size: clamp(12px, 2vw, 14px);
     font-weight: 600;
     text-transform: uppercase;
-    margin: 70px 0 30px;
+    letter-spacing: 2px;
+    margin: 96px 0 16px;
 }
 
 .title1 h2 {
-    font-size: 32px;
-    color: #000f38;
-    margin-top: 5px;
+    font-size: clamp(28px, 5vw, 42px);
+    color: #000000;
+    margin-top: 8px;
     text-transform: none;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .title1 {
+        margin: 64px 0 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title1 {
+        margin: 48px 0 12px;
+    }
 }
 

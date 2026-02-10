@@ -1,57 +1,51 @@
 /* Coordinator.css */
-/* Coordinator.css */
 .coordinator-container {
-    font-family: inherit; /* Resets to your original font */
-    padding: 20px;
-    background-color: #f4f4fc;
+    font-family: 'Outfit', sans-serif;
+    padding: 64px 20px;
+    background-color: #FFFFFF;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #1d4ed8;
-    margin-bottom: 30px;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 64px;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    font-family: inherit; /* Ensure it uses your preferred font */
+    letter-spacing: 2px;
 }
 
 .subtitle {
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 25px;
-    color: #374151;
-    font-family: inherit;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #000000;
 }
 
 .section {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 /* Card Styling */
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 32px;
     flex-wrap: wrap;
 }
 
 .card {
-    background: linear-gradient(135deg, #ffffff, #f3f4f6);
-    border: 1px solid #e5e7eb;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     text-align: center;
     width: 260px;
     max-width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 15px;
+    transition: all 0.3s ease;
 }
 
 .faculty-card {
@@ -61,64 +55,56 @@
 }
 
 .card-image-container {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 15px;
-    border: 3px solid #1d4ed8;
+    margin-bottom: 16px;
+    border: 3px solid #1E40AF;
 }
 
 .card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(20%);
-    transition: filter 0.3s ease;
-}
-
-.card:hover .card-image {
     filter: grayscale(0%);
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .card h3,
 .card h4 {
-    margin: 10px 0;
-    font-size: 1.3rem;
+    margin: 12px 0 8px;
+    font-size: clamp(16px, 2vw, 20px);
     font-weight: 600;
-    color: #1f2937;
+    color: #000000;
 }
 
 .card p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #6b7280;
-    word-wrap: break-word;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #374151;
     line-height: 1.6;
 }
 
-/* Button Hover Effect */
+/* Button Styling */
 .card button {
-    background: #1d4ed8;
+    background: #1E40AF;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .card button:hover {
-    background: #2563eb;
+    background: #1E3A8A;
 }
 
 /* Responsive Layout */
@@ -126,31 +112,44 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 48px;
     flex-wrap: wrap;
 }
 
 .column {
     flex: 1;
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 280px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .year-title {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #0ea5e9;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1E40AF;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    .coordinator-container {
+        padding: 48px 16px;
+    }
+
+    .title {
+        margin-bottom: 48px;
+    }
+
+    .section {
+        margin-bottom: 64px;
+    }
+
     .responsive-columns {
         flex-direction: column;
         align-items: center;
+        gap: 32px;
     }
 
     .column {
@@ -158,25 +157,22 @@
     }
 
     .card {
-        width: 90%;
-    }
-
-    .title {
-        font-size: 2.2rem;
-    }
-
-    .subtitle {
-        font-size: 1.4rem;
+        width: 100%;
+        max-width: 320px;
     }
 }
 
 @media (max-width: 480px) {
-    .title {
-        font-size: 1.8rem;
+    .coordinator-container {
+        padding: 40px 16px;
     }
 
-    .subtitle {
-        font-size: 1.3rem;
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .section {
+        margin-bottom: 48px;
     }
 
     .card {

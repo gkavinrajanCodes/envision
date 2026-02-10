@@ -1,55 +1,51 @@
 .programs {
     margin: 80px auto;
     width: 90%;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.program img {
-    width: 100%;
-    height: auto; /* Ensure aspect ratio is maintained */
-    border-radius: 10px;
-    display: block;
-    object-fit: cover; /* Makes images fit nicely */
-    height: 400px; /* Enforce portrait dimensions */
+    gap: 24px;
+    align-items: stretch;
 }
 
 .program {
-    flex-basis: calc(33.333% - 20px); /* Three items per row with spacing */
+    flex: 1 1 calc(33.333% - 24px);
     position: relative;
+    background: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.program-details {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.program-details h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #001f98;
-}
-
-.program-details p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    text-align: justify;
+.program:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .program img {
     width: 100%;
-    height: 400px; /* Enforce consistent portrait dimensions */
-    border-radius: 10px;
-    object-fit: cover; /* Ensure images fill the container proportionally */
+    height: 400px;
+    border-radius: 0;
     display: block;
-    position: relative; /* Keep it properly positioned */
+    object-fit: cover;
+}
+
+.program-details {
+    padding: 24px;
+}
+
+.program-details h2 {
+    margin-bottom: 12px;
+    font-size: clamp(20px, 2vw, 24px);
+    font-weight: 600;
+    color: #000000;
+}
+
+.program-details p {
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.6;
+    color: #374151;
 }
 
 .caption {
@@ -58,42 +54,51 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 15, 152, 0.3);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
-    border-radius: 10px;
+    color: #FFFFFF;
     opacity: 0;
-    transition: 0.4s;
+    transition: opacity 0.3s ease;
+    padding: 24px;
 }
 
 .caption img {
-    width: 60px; /* Adjust icon size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px;
+    width: 60px;
+    height: auto;
+    margin-bottom: 16px;
 }
 
 .program:hover .caption {
-    opacity: 1; /* Make the caption visible on hover */
+    opacity: 1;
 }
 
-.program .caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 0.75rem;
-    font-size: 1.125rem; /* Increase font size */
-    font-weight: bold; /* Make text bold */
-    transition: background-color 0.3s;
-  }
+.caption h3 {
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 600;
+    color: #FFFFFF;
+}
   
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .programs {
-        flex-direction: column;
+        gap: 20px;
     }
     .program {
-        flex-basis: 100%;
-        margin: 20px;
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .programs {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .program {
+        flex: 1 1 100%;
+    }
+    .program img {
+        height: 300px;
     }
 }

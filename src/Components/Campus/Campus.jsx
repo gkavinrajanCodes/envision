@@ -1,5 +1,5 @@
 // Campus.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Campus.css';
 import gallery_1 from '../../assets/image-2.jpg';
 import gallery_2 from '../../assets/image1.jpg';
@@ -15,6 +15,15 @@ const Campus = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5, gallery_6];
+
+  // Auto-play carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   const handleImageClick = (index) => {
     setSelectedImage(images[index]);
@@ -77,6 +86,18 @@ const Campus = () => {
               setCurrentIndex((prev) => prev === images.length - 1 ? 0 : prev + 1);
             }}
           />
+        </div>
+        
+        {/* Carousel indicators */}
+        <div className="carousel-indicators">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`indicator-dot ${currentIndex === index ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(index)}
+              aria-label={`Go to image ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
 
