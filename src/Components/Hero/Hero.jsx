@@ -4,6 +4,8 @@ import dark_arrow from '../../assets/dark-arrow.png';
 import { Loader2 } from 'lucide-react'; // This should now work
 import CountdownClock from '../CountdownClock/CountdownClock';
 import heroVideo from '../../assets/envision-video.mp4';
+import aycLogo from '../../assets/ayc.png';
+import planpolLogo from '../../assets/planpol.png';
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -39,6 +41,14 @@ const Hero = () => {
           </svg>
           24Hr National Level Hackathon
         </div> */}
+        <div className="title-sponsor-section">
+          <div className="sponsor-logos-container">
+            <img src={aycLogo} alt="AYC Title Sponsor" className="sponsor-logo" />
+            <span className="sponsor-separator">&</span>
+            <img src={planpolLogo} alt="PlanPol Title Sponsor" className="sponsor-logo planpol-logo" />
+          </div>
+          <span className="presents-text">PRESENTS</span>
+        </div>
         <h1>ENVISION 2026</h1>
         <div className="hero-location">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

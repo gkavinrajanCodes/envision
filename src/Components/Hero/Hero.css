@@ -80,11 +80,14 @@
 }
 
 .hero-text {
-    text-align: left;
-    max-width: 700px;
+    text-align: center;
+    max-width: 900px;
     flex: 1;
     position: relative;
     z-index: 1;
+    padding: 60px 40px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
+    border-radius: 16px;
 }
 
 .hero-badge {
@@ -109,16 +112,100 @@
     height: 16px;
 }
 
+/* Title Sponsor Section */
+.title-sponsor-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.sponsor-logos-container {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 3vw, 32px);
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sponsor-logo {
+    height: clamp(120px, 10vw, 150px);
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+}
+
+.sponsor-separator {
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 clamp(8px, 1.5vw, 16px);
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presents-text {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Mobile styles for sponsor section */
+@media (max-width: 768px) {
+    .hero-text {
+        padding: 40px 24px;
+    }
+    
+    .title-sponsor-section {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    
+    .sponsor-logos-container {
+        gap: clamp(12px, 3vw, 20px);
+    }
+    
+    .sponsor-logo {
+        height: clamp(85px, 14vw, 110px);
+    }
+    
+    .sponsor-separator {
+        font-size: clamp(20px, 5vw, 28px);
+        margin: 0 clamp(6px, 1.5vw, 12px);
+    }
+    
+    .presents-text {
+        font-size: clamp(14px, 3.5vw, 18px);
+        letter-spacing: 4px;
+    }
+}
 
 .hero-text h1 {
-    font-size: clamp(56px, 12vw, 120px);
+    font-size: clamp(64px, 14vw, 140px);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     margin-top: 0;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     font-family: 'Bebas Neue', 'Inter', sans-serif;
     color: #ffffff;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.4);
 }
 
 .hero-location {
