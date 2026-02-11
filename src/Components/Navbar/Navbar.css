@@ -70,7 +70,7 @@ nav ul li .btn a {
 }
 
 .dark-nav {
-    background: #1a1a1a;
+    background: #252525;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     color: #e5e5e5;
 }
@@ -112,7 +112,7 @@ nav ul li .btn a {
         top: 0;
         right: 0;
         bottom: 0;
-        background: #1a1a1a;
+        background: #252525;
         z-index: 1000;
         width: 240px;
         padding-top: 80px;
