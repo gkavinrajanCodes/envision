@@ -40,50 +40,20 @@ const StudentCoordinators = () => {
             <div className="card">
               <h4>Dunya Syed Hassan</h4>
               <p>Chairperson</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Chandravel Saravanan</h4>
-              <p>Co Chairperson</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Nithish Kumar S</h4>
-              <p>Vice Chairperson</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>7358273227</p>
+              <p>dunya2210430@ssn.edu.in</p>
             </div>
             <div className="card">
               <h4>R Rohan</h4>
               <p>Secretary</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>9789876485</p>
+              <p>rrohan2210375@ssn.edu.in</p>
             </div>
             <div className="card">
-              <h4>K V Swetha</h4>
-              <p>Treasurer</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>G. Kavin Rajan</h4>
+              <h4>G Kavin Rajan</h4>
               <p>Web Master</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Rupadharshini R</h4>
-              <p>Joint-Treasurer</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Ritujaa B</h4>
-              <p>Design Head</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>9354902664</p>
+              <p>kavinrajan2210227@ssn.edu.in</p>
             </div>
           </div>
 
@@ -93,44 +63,26 @@ const StudentCoordinators = () => {
             <div className="card">
               <h4>Meghana Kumar</h4>
               <p>Joint Secretary</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>9600102412</p>
+              <p>meghana2310410@ssn.edu.in</p>
             </div>
             <div className="card">
               <h4>Amudhakavi S</h4>
               <p>General Secretary</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Pranav Krishna P</h4>
-              <p>Technical Head</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Darshan Parthasarathy</h4>
-              <p>Event Management Head</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
-            </div>
-            <div className="card">
-              <h4>Thirumurugan RA</h4>
-              <p>Digital Marketing Head</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>9789944566</p>
+              <p>amudhakavi2370040@ssn.edu.in</p>
             </div>
             <div className="card">
               <h4>Vishal Muralidharan</h4>
               <p>Digital Marketing Head</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>6382345578</p>
+              <p>vishal2310253@ssn.edu.in</p>
             </div>
             <div className="card">
               <h4>Akshayalakshmi S</h4>
               <p>Editorial Head</p>
-              {/* <p>Phone</p> */}
-              {/* <p>Email</p> */}
+              <p>7695895578</p>
+              <p>akshayalakshmi2310099@ssn.edu.in</p>
             </div>
           </div>
         </div>
@@ -147,7 +99,7 @@ const Coordinator = () => {
       <FacultyCoordinator />
 
       {/* Student Coordinators */}
-      {/* <StudentCoordinators /> */}
+      <StudentCoordinators />
 
     </div>
   );
