@@ -38,8 +38,8 @@ const App = () => {
         <Reach/>
         <Title subtitle = 'CONTACT US' title = 'Get in Touch'/>
         <Contact/>
-        <Footer/>
       </div>
+      <Footer/>
     </div>
   )
 }
