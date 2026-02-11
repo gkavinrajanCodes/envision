@@ -22,8 +22,8 @@
   
   /* Individual card styling */
   .fee-card {
-    flex-basis: 320px;
-    padding: 32px;
+    flex-basis: 300px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
     background: #1a1a1a;
@@ -85,6 +85,7 @@
   
     .fee-card {
       width: 100%;
+      flex-basis: 100%;
       max-width: 400px;
     }
   }
@@ -95,6 +96,7 @@
     }
 
     .fee-card {
+      flex-basis: 100%;
       padding: 24px;
     }
   }
