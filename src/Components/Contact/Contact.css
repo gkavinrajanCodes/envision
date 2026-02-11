@@ -100,8 +100,33 @@
     .contact {
         margin: 48px auto;
         gap: 32px;
+        padding: 0 4vw;
     }
 
+    .contact-col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact form input, .contact form textarea {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 14px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact form .btn {
+        width: 100%;
+        padding: 14px 24px;
+        justify-content: center;
+    }
     .map-container iframe {
         height: 240px;
     }
