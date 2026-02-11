@@ -1,13 +1,14 @@
 import './FAQ.css';
 
 const FAQ = () => {
-  const faqData = [
-    {
-      question: "Rules",
-      emoji: "📜",
-      answer:
-        "Participants will register as individuals and form teams during the hackathon.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.\nParticipants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
-    },
+  const rulesData = {
+    question: "Rules",
+    emoji: "📜",
+    answer:
+      "Participants will register as individuals and form teams during the hackathon.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.\nParticipants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
+  };
+
+  const cardData = [
     {
       question: "Problem Statements",
       emoji: "❓",
@@ -21,8 +22,11 @@ const FAQ = () => {
     {
       question: "Judging Process",
       emoji: "⚖️",
-      answer: "The mentors will conduct several reviews  of all projects during the 24 hours.\nThe final judging and evaluations will take place at the end of 24 hours.",
+      answer: "The mentors will conduct several reviews of all projects during the 24 hours.\nThe final judging and evaluations will take place at the end of 24 hours.",
     },
+  ];
+
+  const additionalRulesData = [
     {
       question: "Technical Requirements",
       emoji: "💻",
@@ -38,13 +42,33 @@ const FAQ = () => {
   return (
     <div className="faq-container" id="faq">
       <div className="faq-content">
-        {faqData.map((faq, index) => (
-          <div key={index} className="faq-item">
-            <h3 className="faq-question">
-              <span>{faq.emoji}</span>
+        {/* Rules Section */}
+        <div className="faq-card">
+          <h3 className="faq-card-question">
+            {rulesData.question}
+          </h3>
+          <p className="faq-card-answer">{rulesData.answer}</p>
+        </div>
+
+        {/* Card Section - Flex Layout */}
+        <div className="faq-cards-container">
+          {cardData.map((card, index) => (
+            <div key={index} className="faq-card">
+              <h3 className="faq-card-question">
+                {card.question}
+              </h3>
+              <p className="faq-card-answer">{card.answer}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Additional Rules Section */}
+        {additionalRulesData.map((faq, index) => (
+          <div key={index} className="faq-card">
+            <h3 className="faq-card-question">
               {faq.question}
             </h3>
-            <p className="faq-answer">{faq.answer}</p>
+            <p className="faq-card-answer">{faq.answer}</p>
           </div>
         ))}
       </div>
