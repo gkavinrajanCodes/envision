@@ -40,7 +40,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        padding: 70px 20px 20px;
+        padding: 90px 24px 24px;
         background: #0f0f0f;
         min-height: auto;
         gap: 32px;
@@ -85,31 +85,10 @@
     flex: 1;
     position: relative;
     z-index: 1;
-    padding: 60px 40px;
+    padding: 25px 50px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
     border-radius: 16px;
-}
-
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
-    border: 1.5px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
-    font-size: clamp(12px, 1.8vw, 14px);
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 24px;
-    letter-spacing: 0.5px;
-    backdrop-filter: blur(8px);
-    background: rgba(0, 0, 0, 0.25);
-}
-
-.hero-badge svg {
-    color: #FFD700;
-    width: 16px;
-    height: 16px;
+    margin: 20px;
 }
 
 /* Title Sponsor Section */
@@ -198,14 +177,28 @@
 }
 
 .hero-text h1 {
-    font-size: clamp(64px, 14vw, 140px);
+    font-size: clamp(50px, 14vw, 120px);
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     margin-top: 0;
     letter-spacing: 6px;
     font-family: 'Bebas Neue', 'Inter', sans-serif;
     color: #ffffff;
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subtitle {
+    font-size: clamp(18px, 4vw, 30px);
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.95);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 0;
+    display: inline-block;
 }
 
 .hero-location {
@@ -218,6 +211,7 @@
     font-size: clamp(13px, 2vw, 16px);
     font-weight: 500;
     color: rgba(255, 255, 255, 0.95);
+    margin-top: 8px;
     margin-bottom: 25px;
     letter-spacing: 0.5px;
     backdrop-filter: blur(8px);
@@ -226,6 +220,29 @@
 
 .hero-location svg {
     color: #FF6B6B;
+    width: 16px;
+    height: 16px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-size: clamp(13px, 2vw, 16px);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 25px;
+    margin-right: 12px;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-badge svg {
+    color: #FFD700;
     width: 16px;
     height: 16px;
 }
@@ -250,6 +267,7 @@
     border: none;
     cursor: pointer;
     margin-top: 16px;
+    margin-bottom: 16px;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
@@ -442,13 +460,20 @@
     .hero-text h1 {
         font-size: clamp(44px, 11vw, 64px);
         max-width: 95%;
-        margin: 0 auto 16px;
+        margin: 0 auto 12px;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(16px, 4.5vw, 24px);
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        padding: 6px 0;
         letter-spacing: 2px;
     }
     
     .hero-badge {
-        font-size: 11px;
-        padding: 6px 14px;
+        font-size: 12px;
+        padding: 8px 16px;
         margin-bottom: 20px;
     }
     

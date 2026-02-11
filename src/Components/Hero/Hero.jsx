@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
-import { Loader2 } from 'lucide-react'; // This should now work
+import { Loader2 } from 'lucide-react';
 import CountdownClock from '../CountdownClock/CountdownClock';
 import heroVideo from '../../assets/envision-video.mp4';
 import aycLogo from '../../assets/ayc.png';
@@ -34,13 +34,6 @@ const Hero = () => {
       </video>
       <div className="hero-overlay"></div>
       <div className="hero-text">
-        {/* <div className="hero-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          24Hr National Level Hackathon
-        </div> */}
         <div className="title-sponsor-section">
           <div className="sponsor-logos-container">
             <img src={aycLogo} alt="AYC Title Sponsor" className="sponsor-logo" />
@@ -50,6 +43,15 @@ const Hero = () => {
           <span className="presents-text">PRESENTS</span>
         </div>
         <h1>ENVISION 2026</h1>
+        <div className="hero-subtitle">24-HOUR HACKATHON</div>
+        <br></br>
+        {/* <div className="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          24h Hackathon
+        </div> */}
         <div className="hero-location">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -57,7 +59,7 @@ const Hero = () => {
           </svg>
           SSN College of Engineering
         </div>
-        <p>Endless ideas, Infinite solutions, Amazing possibilities.</p>
+        <br></br>
         <button 
           onClick={handleRegisterClick} 
           className="register-btn"
