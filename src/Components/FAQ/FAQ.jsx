@@ -6,13 +6,7 @@ const FAQ = () => {
       question: "Rules",
       emoji: "📜",
       answer:
-        "Please note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.",
-    },
-    {
-      question: "Team Composition",
-      emoji: "👥",
-      answer:
-        "Participants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
+        "Participants will register as individuals and form teams during the hackathon.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.\nParticipants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
     },
     {
       question: "Problem Statements",
@@ -27,7 +21,7 @@ const FAQ = () => {
     {
       question: "Judging Process",
       emoji: "⚖️",
-      answer: "The jury will conduct an initial review of all projects during the first session on Day 2.\nThe final judging and evaluations will take place in the afternoon of Day 2.",
+      answer: "The mentors will conduct several reviews  of all projects during the 24 hours.\nThe final judging and evaluations will take place at the end of 24 hours.",
     },
     {
       question: "Technical Requirements",
