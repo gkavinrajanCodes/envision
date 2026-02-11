@@ -66,7 +66,7 @@ nav ul li .btn:hover {
 }
 
 nav ul li .btn a {
-    color: inherit;
+    color: #FFFFFF;
 }
 
 .dark-nav {
@@ -76,7 +76,7 @@ nav ul li .btn a {
 }
 
 .dark-nav ul li a:hover {
-    color: #1E40AF;
+    color: #60A5FA;
 }
 
 .dark-nav .nav-container {
@@ -130,7 +130,9 @@ nav ul li .btn a {
     }
 
     nav ul li a {
-        color: #e5e5e5;
+        background: #1E40AF;
+        color: #FFFFFF;
+        padding: 10px 22px;
     }
 
     nav ul li a:hover {
