@@ -107,6 +107,28 @@ nav ul li .btn a {
         padding: 14px 0;
     }
     
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .nav-container .logo:first-child {
+        grid-column: 1;
+        justify-self: start;
+    }
+    
+    .nav-container .logo:last-of-type {
+        grid-column: 2;
+        justify-self: center;
+    }
+    
+    .menu-icon {
+        grid-column: 3;
+        justify-self: end;
+    }
+    
     nav ul {
         position: fixed;
         top: 0;
