@@ -6,6 +6,7 @@ import CountdownClock from '../CountdownClock/CountdownClock';
 import heroVideo from '../../assets/envision-video.mp4';
 import aycLogo from '../../assets/ayc.png';
 import planpolLogo from '../../assets/planpol.png';
+import Sponsors from '../Sponsors/Sponsors';
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -34,6 +35,7 @@ const Hero = () => {
       </video>
       <div className="hero-overlay"></div>
       <div className="hero-text">
+        <Sponsors />
         <div className="title-sponsor-section">
           <div className="sponsor-logos-container">
             <img src={aycLogo} alt="AYC Title Sponsor" className="sponsor-logo" />

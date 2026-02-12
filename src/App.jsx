@@ -24,8 +24,8 @@ const App = () => {
       <DateBanner/>
       <div className='container'>
         <About/>
-        <Title subtitle = 'Organised By' title = ''/>
-        <Sponsors/>
+        {/* <Title subtitle = 'Organised By' title = ''/>
+        <Sponsors/> */}
         {/* <Title subtitle = 'Timeline' title = 'From concept to conquest'/>
         <Timeline/> */}
         <RegistrationFee/>
