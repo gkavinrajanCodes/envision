@@ -5,6 +5,7 @@ import DateBanner from './Components/DateBanner/DateBanner'
 import Programs from './Components/Programs/Programs'
 import Title from './Components/Title/Title'
 import About from './Components/About/About'
+import Domains from './Components/Domains/Domains'
 import Campus from './Components/Campus/Campus'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
@@ -24,8 +25,8 @@ const App = () => {
       <DateBanner/>
       <div className='container'>
         <About/>
-        {/* <Title subtitle = 'Organised By' title = ''/>
-        <Sponsors/> */}
+        <Title subtitle = 'Problem Domains' title = 'Choose Your Challenge'/>
+        <Domains/>
         <Title subtitle = 'Timeline' title = 'From concept to conquest'/>
         <Timeline/>
         <RegistrationFee/>
