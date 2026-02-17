@@ -18,7 +18,7 @@ const Hero = () => {
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 500));
-      window.location.href="https://forms.gle/Zxuny4uLUAQ5V77k6";
+      window.location.href="";
     } catch (err) {
       setError('Unable to open registration form. Please try again.');
       console.error('Registration error:', err);
@@ -65,7 +65,7 @@ const Hero = () => {
         <button 
           onClick={handleRegisterClick} 
           className="register-btn"
-          disabled={isLoading}
+          disabled={true}
         >
           {isLoading ? (
             <>
@@ -73,7 +73,7 @@ const Hero = () => {
               Redirecting...
             </>
           ) : (
-            'Register Now'
+            'REGISTRATIONS CLOSED!'
           )}
         </button>
         {error && <p className="error-message">{error}</p>}
