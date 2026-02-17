@@ -5,7 +5,7 @@ const FAQ = () => {
     question: "Rules",
     emoji: "📜",
     answer:
-      "Participants will register as individuals and form teams during the hackathon.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.\nParticipants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
+      "Participants will register as individuals and form teams of 4 during the hackathon.\nPlease note that there are limited slots available for participation.\nNo refunds will be provided under any circumstances.\nParticipants will be allowed to form teams at the start of the event during a short networking session. Once formed, changes to team composition are not allowed.",
   };
 
   const cardData = [
