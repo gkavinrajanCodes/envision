@@ -51,11 +51,11 @@ const Contact = () => {
         <ul>
           <li>
             <img src={mail_icon} alt="" />
-            ieeecs-ssn@ssn.edu.in
+            <a href="mailto:ieeecs-ssn@ssn.edu.in">ieeecs-ssn@ssn.edu.in</a>
           </li>
           <li>
             <img src={location_icon} alt="" />
-            IT Seminar Hall, SSN College of Engineering, Chennai - 603110
+            School of Advanced Career Education (SACE) Block, SSN College of Engineering, Kalavakkam - 603110.
           </li>
         </ul>
         <div className="map-container">
