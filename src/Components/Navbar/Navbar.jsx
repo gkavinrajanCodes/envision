@@ -51,15 +51,6 @@ const Navbar = () => {
           <li><HomeScrollLink to='faq' offset={-260}>Guidelines</HomeScrollLink></li>
           <li><HomeScrollLink to='gallery' offset={-200}>Gallery</HomeScrollLink></li>
           <li><HomeScrollLink to='aboutieee' offset={-150}>About IEEECS</HomeScrollLink></li>
-          <li>
-            <RouterLink
-              to="/timer"
-              onClick={closeMenu}
-              className={`timer-nav-link ${isTimerPage ? 'timer-nav-active' : ''}`}
-            >
-              ⏱ Timer
-            </RouterLink>
-          </li>
           <li><button className='btn'><HomeScrollLink to='contact' offset={-260}>Contact us</HomeScrollLink></button></li>
         </ul>
         <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
