@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/ieeecs-ssn.png';
 import menu_icon from '../../assets/menu-icon.png'
 
 const Navbar = () => {
   const [sticky, setsticky] = useState(false);
-  useEffect(()=> {
-    window.addEventListener('scroll', ()=>{
+  const location = useLocation();
+  const isTimerPage = location.pathname === '/timer';
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
       window.scrollY > 50 ? setsticky(true) : setsticky(false);
     })
   }, []);
@@ -21,17 +25,42 @@ const Navbar = () => {
     setMobileMenu(true);
   };
 
+  // On non-home pages, clicking a scroll link should go home first
+  const HomeScrollLink = ({ to, offset, children }) => {
+    if (isTimerPage) {
+      return (
+        <RouterLink to={`/#${to}`} onClick={closeMenu}>{children}</RouterLink>
+      );
+    }
+    return (
+      <ScrollLink to={to} smooth='true' offset={offset} duration={500} onClick={closeMenu}>
+        {children}
+      </ScrollLink>
+    );
+  };
+
   return (
-    <nav className={sticky ? 'dark-nav': ''}>
+    <nav className={sticky ? 'dark-nav' : ''}>
       <div className='container nav-container'>
-        <img src={logo} alt="" className='logo' />
-        <ul className= {mobileMenu ? 'hide-mobile-menu' : ''}>
-          <li><Link to='hero' smooth = 'true' offset={0} duration={500} onClick={closeMenu}>Home</Link></li>
-          <li><Link to='about' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About Envision</Link></li>
-          <li><Link to='faq' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Guidelines</Link></li>
-          <li><Link to='gallery' smooth = 'true' offset={-200} duration={500} onClick={closeMenu}>Gallery</Link></li>
-          <li><Link to='aboutieee' smooth = 'true' offset={-150} duration={500} onClick={closeMenu}>About IEEECS</Link></li>
-          <li><button className='btn'><Link to='contact' smooth = 'true' offset={-260} duration={500} onClick={closeMenu}>Contact us</Link></button></li>
+        <RouterLink to="/">
+          <img src={logo} alt="" className='logo' />
+        </RouterLink>
+        <ul className={mobileMenu ? 'hide-mobile-menu' : ''}>
+          <li><HomeScrollLink to='hero' offset={0}>Home</HomeScrollLink></li>
+          <li><HomeScrollLink to='about' offset={-150}>About Envision</HomeScrollLink></li>
+          <li><HomeScrollLink to='faq' offset={-260}>Guidelines</HomeScrollLink></li>
+          <li><HomeScrollLink to='gallery' offset={-200}>Gallery</HomeScrollLink></li>
+          <li><HomeScrollLink to='aboutieee' offset={-150}>About IEEECS</HomeScrollLink></li>
+          <li>
+            <RouterLink
+              to="/timer"
+              onClick={closeMenu}
+              className={`timer-nav-link ${isTimerPage ? 'timer-nav-active' : ''}`}
+            >
+              ⏱ Timer
+            </RouterLink>
+          </li>
+          <li><button className='btn'><HomeScrollLink to='contact' offset={-260}>Contact us</HomeScrollLink></button></li>
         </ul>
         <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
       </div>
