@@ -75,6 +75,21 @@ nav ul li .btn a {
     color: #e5e5e5;
 }
 
+.timer-nav-link {
+    color: #60A5FA;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.timer-nav-link:hover {
+    color: #93C5FD !important;
+}
+
+.timer-nav-active {
+    color: #3B82F6 !important;
+    font-weight: 600;
+}
+
 .dark-nav ul li a:hover {
     color: #60A5FA;
 }
@@ -96,6 +111,7 @@ nav ul li .btn a {
     .logo {
         width: 110px;
     }
+
     nav ul li {
         margin: 0 16px;
         font-size: 14px;
@@ -106,29 +122,29 @@ nav ul li .btn a {
     nav {
         padding: 14px 0;
     }
-    
+
     .nav-container {
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
         gap: 16px;
     }
-    
+
     .nav-container .logo:first-child {
         grid-column: 1;
         justify-self: start;
     }
-    
+
     .nav-container .logo:last-of-type {
         grid-column: 2;
         justify-self: center;
     }
-    
+
     .menu-icon {
         grid-column: 3;
         justify-self: end;
     }
-    
+
     nav ul {
         position: fixed;
         top: 0;
@@ -143,7 +159,7 @@ nav ul li .btn a {
         box-shadow: -4px 0 16px rgba(0, 0, 0, 0.5);
         color: #e5e5e5;
     }
-    
+
     nav ul li {
         display: block;
         margin: 20px 0;
@@ -160,11 +176,11 @@ nav ul li .btn a {
     nav ul li a:hover {
         color: #60A5FA;
     }
-    
+
     .menu-icon {
         display: block;
     }
-    
+
     .hide-mobile-menu {
         right: -240px;
     }
@@ -174,11 +190,11 @@ nav ul li .btn a {
     .logo {
         width: 100px;
     }
-    
+
     nav ul {
         width: 220px;
     }
-    
+
     .hide-mobile-menu {
         right: -220px;
     }
